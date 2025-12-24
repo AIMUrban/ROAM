@@ -9,10 +9,13 @@ We processed the raw dataset by removing consecutive duplicate records in order 
 
 ### Running Steps
 * Optional arguments can be modified in train.py.
-  **Run the model**
+* To train the model, run:
    ```bash
    python train.py
-   
+* To evaluate the trained model, run:
+   ```bash
+   python train.py --test
+
 ### Citation
 ```bibtex
 @inproceedings{sun2026beyond,
