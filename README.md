@@ -2,11 +2,16 @@
 This is the **PyTorch implementation** of [**Beyond Routines: Adaptive Mobility Prediction via Sequential-Relational Fusion**](https://doi.org/10.1145/3770854.3780268).
 
 ### Datasets
-> Note (for reproducibility): In this repository release, we merge the original `train` and `val` splits and provide them as a single file `train.npy` to make it easier to run the code out-of-the-box. The test split remains unchanged.
+
+> **Note (for reproducibility).**  
+> In this repository release, we merge the original `train` and `val` splits and provide them as a single file `train.npy` to simplify deployment and reproduction. The `test` split remains unchanged.
 
 For access to **raw datasets**, please refer to the [Humob Challenge 2024](https://wp.nyu.edu/humobchallenge2024/). Follow the instructions on their website for data access and usage policies.
 
-We processed the raw dataset by removing consecutive duplicate records in order to extract meaningful user activity locations. The processed data were then split into `train.csv`, `val.csv`, and `test.csv` files. All files contain the following five attributes, consistent with the original dataset: `uid`, `d`, `t`, `x`, `y`.  
+We processed the raw dataset by removing consecutive duplicate records in order to extract meaningful user activity locations. The processed data were originally split into `train.csv`, `val.csv`, and `test.csv`. In this repository, we provide the merged training split as `train.npy` for convenience.
+
+All files contain the following five attributes, consistent with the original dataset:  
+`uid`, `d`, `t`, `x`, `y`.
 
 ### Running Steps
 * Optional arguments can be modified in train.py.
