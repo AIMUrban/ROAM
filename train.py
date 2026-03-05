@@ -88,10 +88,8 @@ print(model)
 
 # === Datasets and Loaders ===
 train_dataset = TrajectoryDataset(args, cache_path=os.path.join(data_path, 'train.npy'))
-valid_dataset = TrajectoryDataset(args, cache_path=os.path.join(data_path, 'valid.npy'))
 test_dataset = TrajectoryDataset(args, cache_path=os.path.join(data_path, 'test.npy'))
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=collate_batch)
-valid_loader = DataLoader(valid_dataset, batch_size=batch_size, shuffle=True, collate_fn=collate_batch)
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, collate_fn=collate_batch)
 
 print('Train set size:', len(train_dataset))
