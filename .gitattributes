@@ -1,0 +1,2 @@
+dataset/citya/*.npy filter=lfs diff=lfs merge=lfs -text
+dataset/citya/*.pt filter=lfs diff=lfs merge=lfs -text
