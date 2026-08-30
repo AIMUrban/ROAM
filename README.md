@@ -1,5 +1,5 @@
 ## ROAM
-This is the **PyTorch implementation** of [**Beyond Routines: Adaptive Mobility Prediction via Sequential-Relational Fusion**](https://dl.acm.org/doi/10.1145/3770855.3818150).
+This is the **PyTorch implementation** of [**Beyond Routines: Adaptive Mobility Prediction via Sequential-Relational Fusion**](https://dl.acm.org/doi/10.1145/3770854.3780268).
 
 ### Datasets
 
